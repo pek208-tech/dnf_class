@@ -109,6 +109,8 @@ a { text-decoration: none; color: inherit; }
 
 
 .list { width: 100%; height: 160px; background-color: var(--light-gray); color: var(--list-text); border-radius: 20px; display: flex; padding: 30px; justify-content: space-between; align-items: center; } 
+.list .thurm img{ width: 84px; height: 78px;}
+.list .book img{ width: 151px; height: 127px;}
 
 .list .text-wrap { display: flex; flex-direction: column; gap: 10px; font-weight: 500; height: 100%; justify-content: space-between; width: 100%; margin: 0 0 0 20px;}
 
