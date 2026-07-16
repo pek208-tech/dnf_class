@@ -7,6 +7,7 @@
   --blue: #22b8ef; 
   --navy: #253858; 
   --text: #26364e; 
+  --text-dec: #21212151; 
   --list-text:#3C4B62; 
   --muted: #9aa9c0; 
   --white:#fff; 
@@ -109,11 +110,13 @@ a { text-decoration: none; color: inherit; }
 
 .list { width: 100%; height: 160px; background-color: var(--light-gray); color: var(--list-text); border-radius: 20px; display: flex; padding: 30px; justify-content: space-between; align-items: center; } 
 
-.list .text-wrap { display: flex; flex-direction: column; gap: 10px; font-weight: 500; height: 100%; justify-content: space-between}
+.list .text-wrap { display: flex; flex-direction: column; gap: 10px; font-weight: 500; height: 100%; justify-content: space-between; width: 100%; margin: 0 0 0 20px;}
 
 .list .text-wrap .tit { display: flex; flex-direction: column; gap: 5px; } 
 
 .list .text-wrap .tit h1 { margin: 0; font-size: 28px; } 
+
+.list .text-wrap .dec{opacity: 80%; font-weight: 300;}
 
 .list-active { background: var(--yellow); color: var(--white); border-radius: 20px; position: relative; } 
 
