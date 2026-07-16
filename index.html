@@ -1,93 +1,241 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reading Gate - Demo Publishing</title>
-  <link rel="stylesheet" href="rg_track_demo.css">
-</head>
-<body>
-  <aside class="sidebar">
-    <div class="logo"><img src="./image/logo.png" alt=""></div>
-    <nav>
-      <div class="nav-item active"><span class="nav-icon"><img src="./image/menu-icon-1.png" alt=""></span>MY CLASS</div>
-      <div class="nav-item"><img src="./image/menu-icon-2.png" alt=""></span>LIBRARY</div>
-      <div class="nav-item"><img src="./image/menu-icon-3.png" alt=""></span>MOVIES</div>
-      <div class="nav-item"><img src="./image/menu-icon-4.png" alt=""></span>MY PAGE</div>
-      <div class="divider"></div>
-      <div class="nav-item"><img src="./image/menu-icon-5.png" alt=""></span>GAME</div>
-      <div class="nav-item"><img src="./image/menu-icon-6.png" alt=""></span>DUBBING</div>
-      <div class="divider"></div>
-      <div class="nav-item"><img src="./image/menu-icon-7.png" alt=""></span>MORE</div>
-    </nav>
-  </aside>
-  <div class="app">
-    <main class="main">
-      <section class="lesson-dashboard sticky">
-        <nav class="lesson-tabs">
-          <button class="lesson-tabs__item">
-            My Lesson
-          </button>
-          <button class="lesson-tabs__item lesson-tabs__item--active">
-            Classes
-          </button>
-        </nav>
-        <div id="changeBox">
-          <div class="content active">
-            <div class="list list-active">
-            <div class="thurm"><img src="./image/list/baro-fight.png" alt=""></div>
-            <div class="text-wrap">
-              <div class="tit">
-                <h1>Baro’s Class</h1>
-                <span>30/30</span>
-              </div>
-              <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
-            </div>
-            <div class="book"><img src="./image/list/baro-book.png" alt=""></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="list">
-            <div class="thurm"><img src="./image/list/baro-pouting.png" alt=""></div>
-            <div class="text-wrap">
-              <div class="tit">
-                <h1>Baro’s Class</h1>
-                <span>30/30</span>
-              </div>
-              <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
-            </div>
-            <div class="book"><img src="./image/list/baro-book.png" alt=""></div>
-          </div>
-          </div>
-          <div class="content">
-            <div class="list">
-            <div class="thurm"><img src="./image/list/baro-disappointment.png" alt=""></div>
-            <div class="text-wrap">
-              <div class="tit">
-                <h1>Baro’s Class</h1>
-                <span>30/30</span>
-              </div>
-              <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
-            </div>
-            <div class="book"><img src="./image/list/baro-book.png" alt=""></div>
-          </div>
-          </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reading Gate - Demo Publishing</title>
+    <link rel="stylesheet" href="rg_track_demo.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo"><img src="./image/logo.png" alt="" /></div>
+      <nav>
+        <div class="nav-item active">
+          <span class="nav-icon">
+            <img src="./image/menu-icon-1.png" alt="" />
+          </span>
+          MY CLASS
         </div>
-      </section>
-       
-    </main>
-    <aside class="right">
-      <section class="profile-card">
-        <div class="profile-head"><div class="avatar"><img src="./image/robo_cleaner_09.png" alt="avatar"></div><div><div class="name">박은경</div><div class="level">Lv. 1A (19%)</div></div></div>
-        <div class="stats"><div class="label"><span class="label-ico"><img src="./image/right-icon-1.png" alt=""></span>Books Read</div><div class="value">455</div><div class="label"><span class="label-ico"><img src="./image/right-icon-2.png" alt=""></span>Earned Points</div><div class="value">1623.1P</div><div class="label"><span class="label-ico"><img src="./image/right-icon-3.png" alt=""></span>To-Do</div><div class="value link">6</div><div class="label"><span class="label-ico"><img src="./image/right-icon-5.png" alt=""></span>Favorites</div><div class="value link">0</div></div>
-      </section>
-      <section class="calendar">
-        <img src="./image/cal.png" alt="">
-      </section>
-      <button class="logout">로그아웃</button>
-    </aside>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
 
+        <div class="nav-item">
+          <span class="nav-icon">
+            <img src="./image/menu-icon-2.png" alt="" />
+          </span>
+          LIBRARY
+        </div>
+
+        <div class="nav-item">
+          <span class="nav-icon">
+            <img src="./image/menu-icon-3.png" alt="" />
+          </span>
+          MOVIES
+        </div>
+
+        <div class="nav-item">
+          <span class="nav-icon">
+            <img src="./image/menu-icon-4.png" alt="" />
+          </span>
+          MY PAGE
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="nav-item">
+          <span class="nav-icon">
+            <img src="./image/menu-icon-5.png" alt="" />
+          </span>
+          GAME
+        </div>
+
+        <div class="nav-item">
+          <span class="nav-icon">
+            <img src="./image/menu-icon-6.png" alt="" />
+          </span>
+          DUBBING
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="nav-item">
+          <span class="nav-icon">
+            <img src="./image/menu-icon-7.png" alt="" />
+          </span>
+          MORE
+        </div>
+      </nav>
+    </aside>
+    <div class="app">
+      <main class="main">
+        <section class="lesson-dashboard sticky">
+          <!-- 네비게이션 -->
+          <nav class="lesson-tabs">
+            <button class="lesson-tabs__item">My Lesson</button>
+            <button class="lesson-tabs__item lesson-tabs__item--active">
+              Classes
+            </button>
+          </nav>
+          <!-- 바로 -->
+          <div class="change-box">
+            <div class="content active">
+                <div class="list list-active">
+                  <div class="thurm">
+                    <img src="./image/list/01_baro-fight.png" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="tit">
+                      <h1>Baro’s Class</h1>
+                      <span>30/30</span>
+                    </div>
+                    <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
+                  </div>
+                  <div class="book">
+                    <img src="./image/list/01_baro-book.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="content">
+                <div class="list">
+                  <div class="thurm">
+                    <img src="./image/list/01_baro-pouting.png" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="tit">
+                      <h1>Baro’s Class</h1>
+                      <span>30/30</span>
+                    </div>
+                    <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
+                  </div>
+                  <div class="book">
+                    <img src="./image/list/01_baro-book.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="list">
+                  <div class="thurm">
+                    <img src="./image/list/01_baro-disappointment.png" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="tit">
+                      <h1>Baro’s Class</h1>
+                      <span>30/30</span>
+                    </div>
+                    <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
+                  </div>
+                  <div class="book">
+                    <img src="./image/list/01_baro-book.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+
+
+          </div>
+          <!-- chello -->
+          <div class="change-box">
+            <div class="content">
+                <div class="list list-active">
+                  <div class="thurm">
+                    <img src="./image/list/02_chello-fight.png" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="tit">
+                      <h1>Baro’s Class</h1>
+                      <span>30/30</span>
+                    </div>
+                    <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
+                  </div>
+                  <div class="book">
+                    <img src="./image/list/02_chello-book.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="content active">
+                <div class="list">
+                  <div class="thurm">
+                    <img src="./image/list/02_chello-pouting.png" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="tit">
+                      <h1>Baro’s Class</h1>
+                      <span>30/30</span>
+                    </div>
+                    <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
+                  </div>
+                  <div class="book">
+                    <img src="./image/list/02_chello-book.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="list">
+                  <div class="thurm">
+                    <img src="./image/list/02_chello-disappointment.png" alt="" />
+                  </div>
+                  <div class="text-wrap">
+                    <div class="tit">
+                      <h1>Baro’s Class</h1>
+                      <span>30/30</span>
+                    </div>
+                    <span>알파벳의 기초와 원리를 배우는 과정입니다.</span>
+                  </div>
+                  <div class="book">
+                    <img src="./image/list/02_chello-book.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+
+
+          </div>
+        </section>
+      </main>
+      <aside class="right">
+        <section class="profile-card">
+          <div class="profile-head">
+            <div class="avatar">
+              <img src="./image/robo_cleaner_09.png" alt="avatar" />
+            </div>
+            <div>
+              <div class="name">박은경</div>
+              <div class="level">Lv. 1A (19%)</div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="label">
+              <span class="label-ico"
+                ><img src="./image/right-icon-1.png" alt="" /></span
+              >Books Read
+            </div>
+            <div class="value">455</div>
+            <div class="label">
+              <span class="label-ico"
+                ><img src="./image/right-icon-2.png" alt="" /></span
+              >Earned Points
+            </div>
+            <div class="value">1623.1P</div>
+            <div class="label">
+              <span class="label-ico"
+                ><img src="./image/right-icon-3.png" alt="" /></span
+              >To-Do
+            </div>
+            <div class="value link">6</div>
+            <div class="label">
+              <span class="label-ico"
+                ><img src="./image/right-icon-5.png" alt="" /></span
+              >Favorites
+            </div>
+            <div class="value link">0</div>
+          </div>
+        </section>
+        <section class="calendar">
+          <img src="./image/cal.png" alt="" />
+        </section>
+        <button class="logout">로그아웃</button>
+      </aside>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

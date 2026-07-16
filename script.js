@@ -1,14 +1,14 @@
-const contents = document.querySelectorAll("#changeBox .content");
-let currentIndex = 0;
+const changeBoxes = document.querySelectorAll(".change-box");
 
-function changeDiv() {
-  contents[currentIndex].classList.remove("active");
+changeBoxes.forEach(function (box) {
+  const contents = box.querySelectorAll(".content");
+  let currentIndex = 0;
 
-  currentIndex = (currentIndex + 1) % contents.length;
+  box.addEventListener("click", function () {
+    contents[currentIndex].classList.remove("active");
 
-  contents[currentIndex].classList.add("active");
-}
+    currentIndex = (currentIndex + 1) % contents.length;
 
-document
-  .getElementById("changeBox")
-  .addEventListener("click", changeDiv);
+    contents[currentIndex].classList.add("active");
+  });
+});
