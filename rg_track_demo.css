@@ -32,9 +32,9 @@ body { margin: 0; background: #fff; color: var(--text); font-family: var(--base)
 
 a { text-decoration: none; color: inherit; } 
 
-.lesson-dashboard { width: 100%; padding: 20px 10px 0px; overflow-x: hidden; display: flex; flex-direction: column; gap: 20px; } 
+.lesson-dashboard { width: 100%; padding: 20px 10px 0px; overflow-x: hidden; display: flex; flex-direction: column; gap: 10px; } 
 
-.lesson-tabs { display: flex; align-items: flex-end; width: 100%; border-bottom: 1px solid #e7ebf2; height: 63px; } 
+.lesson-tabs { display: flex; align-items: flex-end; width: 100%; border-bottom: 1px solid #e7ebf2; height: 63px; margin-bottom: 10px;} 
 
 .lesson-tabs__item { min-width: 171px; border: 0; background: transparent; color: #a7b1c3; font-size: 20px; font-weight: 800; line-height: 1; text-align: center; padding: 20px 30px; cursor: pointer; } 
 
@@ -109,6 +109,7 @@ a { text-decoration: none; color: inherit; }
 
 
 .list { width: 100%; height: 160px; background-color: var(--light-gray); color: var(--list-text); border-radius: 20px; display: flex; padding: 30px; justify-content: space-between; align-items: center; } 
+
 .list .thurm img{ width: 88px; height: 86px;}
 .list .book img{ width: 151px; height: 127px;}
 
